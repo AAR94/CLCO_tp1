@@ -1,4 +1,5 @@
 # CLCO_tp1
 
--Aloui_Abderrahmane
--Zouggar_Ayoub
+1. Aloui Abderrahmane
+
+2. Zouggar Ayoub
