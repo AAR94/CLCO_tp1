@@ -1,12 +1,16 @@
 package com.model;
 
-public class Evaluation {
-	private int qn; // la note de QualitÃ© de la nourriture
-	private int qsa; // la note de QualitÃ© de la salle
-	private int qse; // la note de QualitÃ© du service
+import java.io.Serializable;
+
+public class Evaluation implements Serializable{
+	private String name; //Le nom de restaurant
+	private int qn; // la note de Qualité de la nourriture
+	private int qsa; // la note de Qualité de la salle
+	private int qse; // la note de Qualité du service
 	private double medium=0;
 	
-	public Evaluation(int qn, int qsa, int qse) {
+	public Evaluation(String name,int qn, int qsa, int qse) {
+		this.name=name;
 		this.qn = qn;
 		this.qsa = qsa;
 		this.qse = qse;
@@ -36,11 +40,14 @@ public class Evaluation {
 	public void setMedium(double medium) {
 		this.medium = medium;
 	}
-	
-	public static void main(String[] args) {
-		Evaluation e=new Evaluation(10, 11, 13);
-		System.out.println(e.getMedium());
+	public String getName() {
+		return name;
 	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+
 	
 	
 }
