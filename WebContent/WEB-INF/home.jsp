@@ -10,8 +10,8 @@
      
      <ul>   
      <c:forEach items="${ list }" varStatus="status" var="titre">
-    	 <li> <h3><c:out value="${ titre.getName() }" /> : <a href="/CLCO_p1/rate?type=${status.count}">Your rate :</a> <c:out value="${titre.getMedium()}" default="None"/> </h3></li>
-          <p>  Description N°<c:out value="${ status.count }" /></p>      
+    	 <li> <h3><c:out value="${ titre.getName() }" /> : <a href="/CLCO_tp1/rate?type=${status.count}">Your rate :</a> <c:out value="${titre.getMedium()}" default="None"/> </h3></li>
+          <p>  Description NÂ°<c:out value="${ status.count }" /></p>      
 	</c:forEach>
      </ul>
      
